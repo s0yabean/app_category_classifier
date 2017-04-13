@@ -1,0 +1,36 @@
+Synopsis
+
+This text analytics project was a school assignment to use prediction algorithms to predict app store categories (finance, weather, games, education and social) based on the text reviews.
+
+User types in a text message (no length restriction) and the code returns 1 of 5 pages (categories) showcasing which app category that review is likely to belong to.
+
+Based on this data, my ensemble model got an accuracy of 0.61.
+
+Summary
+
+I first focused on building functions that could process the data accurately to build prediction models, then moved into testing different types of training data based on factors like length of reviews using 3 different classifier methods – SVM, Naive Bayes and lexicon approach. 
+
+Finally, SVM approach gave the best results for me, giving accuracy results of approximately 63%. Next, I tried using ensemble models to combine classifiers, which gave marginally better results than SVM classifier.
+
+Read report.pdf for my details on my analysis and thought process.
+
+
+Thanks!
+
+——————————
+Dataset
+——————————
+
+The dataset is obtained by scraping the Google Play Store. App details (100 apps for each category) and their reviews are captured and converted into CSV format.
+
+The 5 categories are listed below. Each folder contains 100 CSV files and each file represent an Android App (top 100 free android).
+/education
+/finance
+/game
+/social
+/weather
+
+The details of each app can be found in the respective CSV file organized by category.
+/app_detail
+
+Note that there might be errors in the datasets and the files have not been verified throughly.
